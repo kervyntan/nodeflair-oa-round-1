@@ -2,30 +2,43 @@ import React from 'react';
 import CountrySVG from '../assets/CountrySVG.jsx'
 import JobListingTechStack from './JobListingTechStack.jsx';
 
-const JobListingCard = () => {
+const JobListingCard = (props) => {
+
+    const rowTechStack = () => {
+        return props.techStack.map(
+            (tech, index) => {
+                return (
+                    <>
+                        <JobListingTechStack key={index} tech={tech} />
+                    </>
+                )
+            }
+        )
+    }
+
     return (
         <div className="job-listing-container">
             <div className="job-listing card">
                 <div className="job-listing-top-portion">
                     <div className="job-listing-top d-flex">
                         <div className="job-listing-img-container">
-                            <img className="logo" src="https://nodeflair.com/companies/14357.png" alt="Trust Wallet logo" />
+                            <img className="logo" src={props.logo} alt="Trust Wallet logo" />
                         </div>
 
                         <div className="job-listing-desc-container">
                             <p className="job-listing-para paragraph">
-                                <span>Trust Wallet</span>
-                                <span>2.3&nbsp;★</span>
+                                <span>{props.company}</span>
+                                <span>{props.rating}&nbsp;★</span>
                             </p>
 
                             <h2 className="job-listing-title heading">
-                                Blockchain Engineer (C++ or GO or RUST)
+                                {props.jobTitle}
                             </h2>
                         </div>
 
                         <div className="job-listing-specialisation-container">
                             <div className="job-listing-specialisation-tag">
-                                <span> Blockchain </span>
+                                <span> {props.specialisation} </span>
                             </div>
                         </div>
                     </div>
@@ -47,9 +60,7 @@ const JobListingCard = () => {
                 <div className="job-listing-bottom-portion">
 
                     <div className="job-listing-bottom d-flex">
-                        <JobListingTechStack tech="C++"/>
-                        <JobListingTechStack tech="Go"/>
-                        <JobListingTechStack tech="Rust"/>
+                        {rowTechStack()}
                     </div>
                 </div>
             </div>
