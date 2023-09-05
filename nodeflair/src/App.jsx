@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import './App.css'
+import JobListingCard from './components/JobListingCard'
 
 function App() {
 
   return (
-    
+    <JobListingCard />
   )
 }
 
