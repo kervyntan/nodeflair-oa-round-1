@@ -17,8 +17,8 @@ const JobListingCard = (props) => {
     }
 
     return (
-        <div className="job-listing-container">
-            <div className="job-listing card">
+        <div className="job-listing-container" onClick={props.onClick}> 
+            <div className={"job-listing card " + props.activeClass} id={props.selected ? 'selected' : ''}>
                 <div className="job-listing-top-portion">
                     <div className="job-listing-top d-flex">
                         <div className="job-listing-img-container">
