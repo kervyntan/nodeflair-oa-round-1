@@ -7,67 +7,106 @@ const JobDisplay = () => {
 
     const [selected, setSelected] = useState()
     const [jobTitle, setJobTitle] = useState("")
-    
-    const refreshJobTitle = (index) => {
-        switch(index) {
-            case 1:
-                setJobTitle("Blockchain Engineer (C++ or GO or RUST)")
-                break
-            case 2:
-                setJobTitle("GovTech")
-                break
-            case 3:
-                setJobTitle("Kite")
-                break
-            case 4:
-                setJobTitle("Press")
-                break
-            case 5:
-                setJobTitle("Optiver")
-                break
-            case 6:
-                setJobTitle("Open Government Products")
-                break
-            default:
-                break
-        }
-    }
 
-    useEffect( () => {
-        refreshJobTitle(selected)
-    }, [selected])
+    const jobData = [
+        {
+            logo: "https://nodeflair.com/companies/14357.png",
+            company: "Trust Wallet",
+            rating: "2.3",
+            specialisation: "Blockchain",
+            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
+            recency: "about 3 hours ago",
+            country: "Singapore",
+            techStack: ["C++", "Go", "Rust"],
+            activeClass: selected === 1 ? 'active' : ''
+        },
+        {
+            logo: "https://nodeflair.com/companies/14357.png",
+            company: "Trust Wallet",
+            rating: "2.3",
+            specialisation: "Blockchain",
+            jobTitle: "Technical Engineer (Cloud)",
+            recency: "about 3 hours ago",
+            country: "Singapore",
+            techStack: ["C++", "Go", "Rust", "REST API", "JavaScript", "Docker", "TypeScript", "TypeScript"],
+            activeClass: selected === 2 ? 'active' : ''
+        },
+        {
+            logo: "https://nodeflair.com/companies/14357.png",
+            company: "Trust Wallet",
+            rating: "2.3",
+            specialisation: "Blockchain",
+            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
+            recency: "about 3 hours ago",
+            country: "Singapore",
+            techStack: ["C++", "Go", "Rust"],
+            activeClass: selected === 3 ? 'active' : ''
+        },
+        {
+            logo: "https://nodeflair.com/companies/14357.png",
+            company: "Trust Wallet",
+            rating: "2.3",
+            specialisation: "Blockchain",
+            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
+            recency: "about 3 hours ago",
+            country: "Singapore",
+            techStack: ["C++", "Go", "Rust"],
+            activeClass: selected === 4 ? 'active' : ''
+        },
+        {
+            logo: "https://nodeflair.com/companies/14357.png",
+            company: "Trust Wallet",
+            rating: "2.3",
+            specialisation: "Blockchain",
+            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
+            recency: "about 3 hours ago",
+            country: "Singapore",
+            techStack: ["C++", "Go", "Rust"],
+            activeClass: selected === 5 ? 'active' : ''
+        },
+        {
+            logo: "https://nodeflair.com/companies/14357.png",
+            company: "Trust Wallet",
+            rating: "2.3",
+            specialisation: "Blockchain",
+            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
+            recency: "about 3 hours ago",
+            country: "Singapore",
+            techStack: ["C++", "Go", "Rust"],
+            activeClass: selected === 6 ? 'active' : ''
+        }
+    ]
 
     return (
 
         <div className="jobs-display d-flex">
-            {/* SetJobTitle together with setSelected using onClick */}
             <div className="jobs-display-left">
-                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Blockchain Engineer (C++ or GO or RUST)" techStack={["C++", "Go", "Rust"]}
-                    activeClass={selected === 1 ? 'active' : ''}
-                    onClick={() => setSelected(1) } />
+                <JobListingCard
+                    data={jobData[0]}
+                    onClick={() => {setSelected(1); setJobTitle(jobData[0].jobTitle)}} />
 
-                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Technical Product Manager (Cloud)" techStack={["C++", "Go", "Rust", "REST API", "JavaScript", "Docker", "TypeScript", "TypeScript"]}
-                    activeClass={selected === 2 ? 'active' : ''}
-                    onClick={() => setSelected(2)}
+                <JobListingCard
+                    data={jobData[1]}
+                    onClick={() => {setSelected(2); setJobTitle(jobData[1].jobTitle)}}
                 />
 
-                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Blockchain Engineer (C++ or GO or RUST)" techStack={["C++", "Go", "Rust"]}
-                    activeClass={selected === 3 ? 'active' : ''}
-                    onClick={() => setSelected(3)}
+                <JobListingCard
+                    data={jobData[2]}
+                    onClick={() => {setSelected(3); setJobTitle(jobData[2].jobTitle)}}
                 />
 
-                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Blockchain Engineer (C++ or GO or RUST)" techStack={["C++", "Go", "Rust"]}
-                    activeClass={selected === 4 ? 'active' : ''}
-                    onClick={() => setSelected(4)}
+                <JobListingCard
+                    data={jobData[3]}
+                    onClick={() => {setSelected(4); setJobTitle(jobData[3].jobTitle)}}
                 />
 
-                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Blockchain Engineer (C++ or GO or RUST)" techStack={["C++", "Go", "Rust"]}
-                    activeClass={selected === 5 ? 'active' : ''}
-                    onClick={() => setSelected(5)} />
+                <JobListingCard
+                    data={jobData[4]}
+                    onClick={() => {setSelected(5); setJobTitle(jobData[4].jobTitle)}} />
 
-                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Blockchain Engineer (C++ or GO or RUST)" techStack={["C++", "Go", "Rust"]}
-                    activeClass={selected === 6 ? 'active' : ''}
-                    onClick={() => setSelected(6)}
+                <JobListingCard
+                    data={jobData[5]}
+                    onClick={() => {setSelected(6); setJobTitle(jobData[5].jobTitle)}}
                 />
             </div>
 
