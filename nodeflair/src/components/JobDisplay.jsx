@@ -46,7 +46,7 @@ const JobDisplay = () => {
                     activeClass={selected === 1 ? 'active' : ''}
                     onClick={() => setSelected(1) } />
 
-                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Blockchain Engineer (C++ or GO or RUST)" techStack={["C++", "Go", "Rust"]}
+                <JobListingCard logo="https://nodeflair.com/companies/14357.png" company="Trust Wallet" rating="2.3" specialisation="Blockchain" jobTitle="Technical Product Manager (Cloud)" techStack={["C++", "Go", "Rust", "REST API", "JavaScript", "Docker", "TypeScript", "TypeScript"]}
                     activeClass={selected === 2 ? 'active' : ''}
                     onClick={() => setSelected(2)}
                 />

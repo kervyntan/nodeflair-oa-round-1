@@ -59,7 +59,7 @@ const JobListingCard = (props) => {
 
                 <div className="job-listing-bottom-portion">
 
-                    <div className="job-listing-bottom d-flex">
+                    <div className="job-listing-bottom">
                         {rowTechStack()}
                     </div>
                 </div>
