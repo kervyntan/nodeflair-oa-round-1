@@ -10,71 +10,89 @@ const JobDisplay = () => {
 
     const jobData = [
         {
-            logo: "https://nodeflair.com/companies/14357.png",
-            company: "Trust Wallet",
-            rating: "2.3",
-            specialisation: "Blockchain",
-            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
-            recency: "about 3 hours ago",
-            country: "Singapore",
-            techStack: ["C++", "Go", "Rust"],
+            link: "https://nodeflair.com/jobs/midas-teknologi-system-analyst-167801?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
+            logo: "https://nodeflair.com/companies/7769.png",
+            company: "Midas Teknologi",
+            rating: "5.0",
+            specialisation: "Syst. Analyst",
+            jobTitle: "System Analyst",
+            recency: "less than a minute ago",
+            country: "Indonesia",
+            techStack: ["Apigee", "Swagger", "API", "Google Cloud", "Flow", "UML", "MSSQL"],
             activeClass: selected === 1 ? 'active' : ''
         },
         {
-            logo: "https://nodeflair.com/companies/14357.png",
-            company: "Trust Wallet",
-            rating: "2.3",
-            specialisation: "Blockchain",
-            jobTitle: "Technical Engineer (Cloud)",
-            recency: "about 3 hours ago",
-            country: "Singapore",
-            techStack: ["C++", "Go", "Rust", "REST API", "JavaScript", "Docker", "TypeScript", "TypeScript"],
+            link: "https://nodeflair.com/jobs/msig-asia-data-engineer-167800?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
+            logo: "https://nodeflair.com/companies/1145.png",
+            company: "MSIG Asia",
+            rating: "3.1",
+            specialisation: "Data Eng",
+            jobTitle: "Data Engineer",
+            recency: "4 minutes ago",
+            country: "Indonesia",
+            techStack: ["ETL", "SSIS"],
             activeClass: selected === 2 ? 'active' : ''
         },
         {
-            logo: "https://nodeflair.com/companies/14357.png",
-            company: "Trust Wallet",
-            rating: "2.3",
-            specialisation: "Blockchain",
-            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
-            recency: "about 3 hours ago",
-            country: "Singapore",
-            techStack: ["C++", "Go", "Rust"],
+            link: "https://nodeflair.com/jobs/halodoc-product-manager-167799?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
+            logo: "https://nodeflair.com/companies/11019.png",
+            company: "Halodoc",
+            rating: "5.0",
+            specialisation: "PM",
+            jobTitle: "Product Manager",
+            recency: "5 minutes ago",
+            country: "Indonesia",
+            techStack: ["Strategy"],
             activeClass: selected === 3 ? 'active' : ''
         },
         {
-            logo: "https://nodeflair.com/companies/14357.png",
-            company: "Trust Wallet",
-            rating: "2.3",
-            specialisation: "Blockchain",
-            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
-            recency: "about 3 hours ago",
-            country: "Singapore",
-            techStack: ["C++", "Go", "Rust"],
+            link: "https://nodeflair.com/jobs/solve-education-foundation-middle-level-data-engineer-167794?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
+            logo: "https://nodeflair.com/companies/18258.png",
+            company: "Solve Education! Foundation",
+            rating: "5.0",
+            specialisation: "Data Eng",
+            jobTitle: "Middle-Level Data Engineer",
+            recency: "5 minutes ago",
+            country: "Indonesia",
+            techStack: ["ETL", "SVN", "AWS", "Analytics", "Google Cloud", "BigQuery", "Apache", "Git", "Java", "Airflow", "NoSQL", "SQL"],
             activeClass: selected === 4 ? 'active' : ''
         },
         {
-            logo: "https://nodeflair.com/companies/14357.png",
-            company: "Trust Wallet",
-            rating: "2.3",
-            specialisation: "Blockchain",
-            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
-            recency: "about 3 hours ago",
-            country: "Singapore",
-            techStack: ["C++", "Go", "Rust"],
+            link: "https://nodeflair.com/jobs/julo-sr-data-scientist-167798?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
+            logo: "https://nodeflair.com/companies/8941.png",
+            company: "JULO",
+            rating: "5.0",
+            specialisation: "Data Sci",
+            jobTitle: "Sr Data Scientist",
+            recency: "6 minutes ago",
+            country: "Indonesia",
+            techStack: ["SQL", "Python"],
             activeClass: selected === 5 ? 'active' : ''
         },
         {
-            logo: "https://nodeflair.com/companies/14357.png",
-            company: "Trust Wallet",
-            rating: "2.3",
-            specialisation: "Blockchain",
-            jobTitle: "Blockchain Engineer (C++ or GO or RUST)",
-            recency: "about 3 hours ago",
-            country: "Singapore",
-            techStack: ["C++", "Go", "Rust"],
+            link: "https://nodeflair.com/jobs/accenture-devsecops-engineer-167797?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
+            logo: "https://nodeflair.com/companies/1029.png",
+            company: "Accenture",
+            rating: "4.1",
+            specialisation: "DevOps",
+            jobTitle: "DevSecOps Engineer",
+            recency: "7 minutes ago",
+            country: "Indonesia",
+            techStack: ["Flux", "GitLab", "Terraform", "Jenkins", "Debian", "RHEL", "Ubuntu", "Chef", "Bamboo", "Azure"],
             activeClass: selected === 6 ? 'active' : ''
-        }
+        },
+        {
+            link: "https://nodeflair.com/jobs/dyson-senior-android-engineer-167997?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
+            logo: "https://nodeflair.com/companies/378.png",
+            company: "Dyson",
+            rating: "3",
+            specialisation: "Android",
+            jobTitle: "Senior Android Engineer",
+            recency: "9 minutes ago",
+            country: "Singapore",
+            techStack: ["TDD", "CI", "Android"],
+            activeClass: selected === 7 ? 'active' : ''
+        },
     ]
 
     return (
@@ -107,6 +125,11 @@ const JobDisplay = () => {
                 <JobListingCard
                     data={jobData[5]}
                     onClick={() => {setSelected(6); setJobTitle(jobData[5].jobTitle)}}
+                />
+
+                <JobListingCard
+                    data={jobData[6]}
+                    onClick={() => {setSelected(7); setJobTitle(jobData[6].jobTitle)}}
                 />
             </div>
 
