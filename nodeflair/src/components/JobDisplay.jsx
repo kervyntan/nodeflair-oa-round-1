@@ -19,7 +19,8 @@ const JobDisplay = () => {
             recency: "less than a minute ago",
             country: "Indonesia",
             techStack: ["Apigee", "Swagger", "API", "Google Cloud", "Flow", "UML", "MSSQL"],
-            activeClass: selected === 1 ? 'active' : ''
+            activeClass: selected === 1 ? 'active' : '',
+            alt: "Midas Teknologi"
         },
         {
             link: "https://nodeflair.com/jobs/msig-asia-data-engineer-167800?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
@@ -31,7 +32,8 @@ const JobDisplay = () => {
             recency: "4 minutes ago",
             country: "Indonesia",
             techStack: ["ETL", "SSIS"],
-            activeClass: selected === 2 ? 'active' : ''
+            activeClass: selected === 2 ? 'active' : '',
+            alt: "MSIG Asia"
         },
         {
             link: "https://nodeflair.com/jobs/halodoc-product-manager-167799?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
@@ -43,7 +45,8 @@ const JobDisplay = () => {
             recency: "5 minutes ago",
             country: "Indonesia",
             techStack: ["Strategy"],
-            activeClass: selected === 3 ? 'active' : ''
+            activeClass: selected === 3 ? 'active' : '',
+            alt: "Halodoc"
         },
         {
             link: "https://nodeflair.com/jobs/solve-education-foundation-middle-level-data-engineer-167794?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
@@ -55,7 +58,8 @@ const JobDisplay = () => {
             recency: "5 minutes ago",
             country: "Indonesia",
             techStack: ["ETL", "SVN", "AWS", "Analytics", "Google Cloud", "BigQuery", "Apache", "Git", "Java", "Airflow", "NoSQL", "SQL"],
-            activeClass: selected === 4 ? 'active' : ''
+            activeClass: selected === 4 ? 'active' : '',
+            alt: "Solve Education! Foundation"
         },
         {
             link: "https://nodeflair.com/jobs/julo-sr-data-scientist-167798?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
@@ -67,7 +71,8 @@ const JobDisplay = () => {
             recency: "6 minutes ago",
             country: "Indonesia",
             techStack: ["SQL", "Python"],
-            activeClass: selected === 5 ? 'active' : ''
+            activeClass: selected === 5 ? 'active' : '',
+            alt: "JULO"
         },
         {
             link: "https://nodeflair.com/jobs/accenture-devsecops-engineer-167797?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
@@ -79,7 +84,8 @@ const JobDisplay = () => {
             recency: "7 minutes ago",
             country: "Indonesia",
             techStack: ["Flux", "GitLab", "Terraform", "Jenkins", "Debian", "RHEL", "Ubuntu", "Chef", "Bamboo", "Azure"],
-            activeClass: selected === 6 ? 'active' : ''
+            activeClass: selected === 6 ? 'active' : '',
+            alt: "Accenture"
         },
         {
             link: "https://nodeflair.com/jobs/dyson-senior-android-engineer-167997?utm_campaign=job_search&utm_medium=listing&utm_source=nodeflair_jobs",
@@ -91,7 +97,8 @@ const JobDisplay = () => {
             recency: "9 minutes ago",
             country: "Singapore",
             techStack: ["TDD", "CI", "Android"],
-            activeClass: selected === 7 ? 'active' : ''
+            activeClass: selected === 7 ? 'active' : '',
+            alt: "Dyson"
         },
     ]
 

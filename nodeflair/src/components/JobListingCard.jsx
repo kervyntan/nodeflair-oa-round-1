@@ -27,7 +27,7 @@ const JobListingCard = (props) => {
                     <div className="job-listing-top-portion">
                         <div className="job-listing-top d-flex">
                             <div className="job-listing-img-container">
-                                <img className="logo" src={details.logo} alt="Trust Wallet logo" />
+                                <img className="logo" src={details.logo} alt={details.alt} />
                             </div>
 
                             <div className="job-listing-desc-container">
